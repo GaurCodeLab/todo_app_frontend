@@ -1,0 +1,612 @@
+Folder PATH listing
+Volume serial number is 3E00-EF2F
+C:.
+³   .gitignore
+³   .metadata
+³   analysis_options.yaml
+³   frontend_todo_structure.txt
+³   pubspec.lock
+³   pubspec.yaml
+³   README.md
+³   todo_app.iml
+³   
+ÃÄÄÄ.dart_tool
+³   ³   package_config.json
+³   ³   package_config_subset
+³   ³   version
+³   ³   
+³   ÃÄÄÄchrome-device
+³   ³   ÀÄÄÄDefault
+³   ³       ³   Affiliation Database
+³   ³       ³   Affiliation Database-journal
+³   ³       ³   BrowsingTopicsSiteData
+³   ³       ³   BrowsingTopicsSiteData-journal
+³   ³       ³   BrowsingTopicsState
+³   ³       ³   DIPS
+³   ³       ³   DIPS-journal
+³   ³       ³   Favicons
+³   ³       ³   Favicons-journal
+³   ³       ³   heavy_ad_intervention_opt_out.db
+³   ³       ³   heavy_ad_intervention_opt_out.db-journal
+³   ³       ³   History
+³   ³       ³   History-journal
+³   ³       ³   LOCK
+³   ³       ³   LOG
+³   ³       ³   LOG.old
+³   ³       ³   Login Data
+³   ³       ³   Login Data For Account
+³   ³       ³   Login Data For Account-journal
+³   ³       ³   Login Data-journal
+³   ³       ³   Network Action Predictor
+³   ³       ³   Network Action Predictor-journal
+³   ³       ³   Preferences
+³   ³       ³   PreferredApps
+³   ³       ³   README
+³   ³       ³   Secure Preferences
+³   ³       ³   SharedStorage
+³   ³       ³   SharedStorage-wal
+³   ³       ³   Shortcuts
+³   ³       ³   Shortcuts-journal
+³   ³       ³   Top Sites
+³   ³       ³   Top Sites-journal
+³   ³       ³   trusted_vault.pb
+³   ³       ³   Visited Links
+³   ³       ³   Web Data
+³   ³       ³   Web Data-journal
+³   ³       ³   
+³   ³       ÃÄÄÄAutofillStrikeDatabase
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       
+³   ³       ÃÄÄÄblob_storage
+³   ³       ³   ÃÄÄÄacfec8ad-63e8-4010-8d89-2b9248ab68ab
+³   ³       ³   ÃÄÄÄad21ef5f-c570-4b47-820f-41e0347d25fd
+³   ³       ³   ÃÄÄÄbd14c0af-0186-43b1-a4c6-ece15f8e844d
+³   ³       ³   ÀÄÄÄfc0efcba-eb3d-4902-9657-79d573413a5c
+³   ³       ÃÄÄÄBudgetDatabase
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       
+³   ³       ÃÄÄÄchrome_cart_db
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       
+³   ³       ÃÄÄÄClientCertificates
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       
+³   ³       ÃÄÄÄcommerce_subscription_db
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       
+³   ³       ÃÄÄÄcoupon_db
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       
+³   ³       ÃÄÄÄdiscounts_db
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       
+³   ³       ÃÄÄÄDownload Service
+³   ³       ³   ÃÄÄÄEntryDB
+³   ³       ³   ³       LOCK
+³   ³       ³   ³       LOG
+³   ³       ³   ³       LOG.old
+³   ³       ³   ³       
+³   ³       ³   ÀÄÄÄFiles
+³   ³       ÃÄÄÄExtension Rules
+³   ³       ³       000003.log
+³   ³       ³       CURRENT
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       MANIFEST-000001
+³   ³       ³       
+³   ³       ÃÄÄÄExtension Scripts
+³   ³       ³       000003.log
+³   ³       ³       CURRENT
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       MANIFEST-000001
+³   ³       ³       
+³   ³       ÃÄÄÄExtension State
+³   ³       ³       000003.log
+³   ³       ³       CURRENT
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       MANIFEST-000001
+³   ³       ³       
+³   ³       ÃÄÄÄFeature Engagement Tracker
+³   ³       ³   ÃÄÄÄAvailabilityDB
+³   ³       ³   ³       LOCK
+³   ³       ³   ³       LOG
+³   ³       ³   ³       LOG.old
+³   ³       ³   ³       
+³   ³       ³   ÀÄÄÄEventDB
+³   ³       ³           LOCK
+³   ³       ³           LOG
+³   ³       ³           LOG.old
+³   ³       ³           
+³   ³       ÃÄÄÄfeedv2
+³   ³       ³   ÀÄÄÄstreamdb
+³   ³       ³           LOCK
+³   ³       ³           LOG
+³   ³       ³           
+³   ³       ÃÄÄÄGCM Store
+³   ³       ³   ÀÄÄÄEncryption
+³   ³       ³           000003.log
+³   ³       ³           CURRENT
+³   ³       ³           LOCK
+³   ³       ³           LOG
+³   ³       ³           LOG.old
+³   ³       ³           MANIFEST-000001
+³   ³       ³           
+³   ³       ÃÄÄÄLocal Storage
+³   ³       ³   ÀÄÄÄleveldb
+³   ³       ³           000003.log
+³   ³       ³           CURRENT
+³   ³       ³           LOCK
+³   ³       ³           LOG
+³   ³       ³           LOG.old
+³   ³       ³           MANIFEST-000001
+³   ³       ³           
+³   ³       ÃÄÄÄNetwork
+³   ³       ³       36829804-a2ee-49b1-bf78-b3d57b930510.tmp
+³   ³       ³       Cookies
+³   ³       ³       Cookies-journal
+³   ³       ³       Network Persistent State
+³   ³       ³       NetworkDataMigrated
+³   ³       ³       Reporting and NEL
+³   ³       ³       Reporting and NEL-journal
+³   ³       ³       TransportSecurity
+³   ³       ³       Trust Tokens
+³   ³       ³       Trust Tokens-journal
+³   ³       ³       
+³   ³       ÃÄÄÄoptimization_guide_hint_cache_store
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       
+³   ³       ÃÄÄÄparcel_tracking_db
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       
+³   ³       ÃÄÄÄPersistentOriginTrials
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       
+³   ³       ÃÄÄÄSafe Browsing Network
+³   ³       ³       NetworkDataMigrated
+³   ³       ³       Safe Browsing Cookies
+³   ³       ³       Safe Browsing Cookies-journal
+³   ³       ³       
+³   ³       ÃÄÄÄSegmentation Platform
+³   ³       ³   ÃÄÄÄSegmentInfoDB
+³   ³       ³   ³       LOCK
+³   ³       ³   ³       LOG
+³   ³       ³   ³       LOG.old
+³   ³       ³   ³       
+³   ³       ³   ÃÄÄÄSignalDB
+³   ³       ³   ³       LOCK
+³   ³       ³   ³       LOG
+³   ³       ³   ³       LOG.old
+³   ³       ³   ³       
+³   ³       ³   ÀÄÄÄSignalStorageConfigDB
+³   ³       ³           LOCK
+³   ³       ³           LOG
+³   ³       ³           LOG.old
+³   ³       ³           
+³   ³       ÃÄÄÄService Worker
+³   ³       ³   ÃÄÄÄDatabase
+³   ³       ³   ³       000003.log
+³   ³       ³   ³       CURRENT
+³   ³       ³   ³       LOCK
+³   ³       ³   ³       LOG
+³   ³       ³   ³       LOG.old
+³   ³       ³   ³       MANIFEST-000001
+³   ³       ³   ³       
+³   ³       ³   ÀÄÄÄScriptCache
+³   ³       ³       ³   2cc80dabc69f58b6_0
+³   ³       ³       ³   4cb013792b196a35_0
+³   ³       ³       ³   67a473248953641b_0
+³   ³       ³       ³   b6c28cea6ed9dfc1_0
+³   ³       ³       ³   ba23d8ecda68de77_0
+³   ³       ³       ³   f1cdccba37924bda_0
+³   ³       ³       ³   fa813c9ad67834ac_0
+³   ³       ³       ³   index
+³   ³       ³       ³   
+³   ³       ³       ÀÄÄÄindex-dir
+³   ³       ³               the-real-index
+³   ³       ³               
+³   ³       ÃÄÄÄSession Storage
+³   ³       ³       000003.log
+³   ³       ³       CURRENT
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       MANIFEST-000001
+³   ³       ³       
+³   ³       ÃÄÄÄSessions
+³   ³       ³       Session_13365622816485537
+³   ³       ³       Session_13365667232986841
+³   ³       ³       Session_13365668396478817
+³   ³       ³       Session_13365671565953254
+³   ³       ³       Session_13365673452976645
+³   ³       ³       Session_13365710140763886
+³   ³       ³       Session_13365776285328159
+³   ³       ³       Tabs_13365668237251569
+³   ³       ³       Tabs_13365668396749404
+³   ³       ³       Tabs_13365671566503599
+³   ³       ³       Tabs_13365673453273376
+³   ³       ³       Tabs_13365710141471693
+³   ³       ³       Tabs_13365776286079482
+³   ³       ³       
+³   ³       ÃÄÄÄShared Dictionary
+³   ³       ³   ³   db
+³   ³       ³   ³   db-journal
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄcache
+³   ³       ³       ³   index
+³   ³       ³       ³   
+³   ³       ³       ÀÄÄÄindex-dir
+³   ³       ³               the-real-index
+³   ³       ³               
+³   ³       ÃÄÄÄshared_proto_db
+³   ³       ³   ³   000003.log
+³   ³       ³   ³   000004.log
+³   ³       ³   ³   000005.ldb
+³   ³       ³   ³   CURRENT
+³   ³       ³   ³   LOCK
+³   ³       ³   ³   LOG
+³   ³       ³   ³   LOG.old
+³   ³       ³   ³   MANIFEST-000001
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄmetadata
+³   ³       ³           000003.log
+³   ³       ³           CURRENT
+³   ³       ³           LOCK
+³   ³       ³           LOG
+³   ³       ³           LOG.old
+³   ³       ³           MANIFEST-000001
+³   ³       ³           
+³   ³       ÃÄÄÄSite Characteristics Database
+³   ³       ³       000003.log
+³   ³       ³       CURRENT
+³   ³       ³       LOCK
+³   ³       ³       LOG
+³   ³       ³       LOG.old
+³   ³       ³       MANIFEST-000001
+³   ³       ³       
+³   ³       ÃÄÄÄSync Data
+³   ³       ³   ÀÄÄÄLevelDB
+³   ³       ³           000003.log
+³   ³       ³           CURRENT
+³   ³       ³           LOCK
+³   ³       ³           LOG
+³   ³       ³           LOG.old
+³   ³       ³           MANIFEST-000001
+³   ³       ³           
+³   ³       ÀÄÄÄWebStorage
+³   ³               QuotaManager
+³   ³               QuotaManager-journal
+³   ³               
+³   ÃÄÄÄdartpad
+³   ³       web_plugin_registrant.dart
+³   ³       
+³   ÀÄÄÄextension_discovery
+³           devtools.json
+³           vs_code.json
+³           
+ÃÄÄÄ.idea
+³   ³   modules.xml
+³   ³   workspace.xml
+³   ³   
+³   ÃÄÄÄlibraries
+³   ³       Dart_SDK.xml
+³   ³       KotlinJavaRuntime.xml
+³   ³       
+³   ÀÄÄÄrunConfigurations
+³           main_dart.xml
+³           
+ÃÄÄÄ.vscode
+³       settings.json
+³       
+ÃÄÄÄandroid
+³   ³   .gitignore
+³   ³   build.gradle
+³   ³   gradle.properties
+³   ³   gradlew
+³   ³   gradlew.bat
+³   ³   local.properties
+³   ³   settings.gradle
+³   ³   todo_app_android.iml
+³   ³   
+³   ÃÄÄÄapp
+³   ³   ³   build.gradle
+³   ³   ³   
+³   ³   ÀÄÄÄsrc
+³   ³       ÃÄÄÄdebug
+³   ³       ³       AndroidManifest.xml
+³   ³       ³       
+³   ³       ÃÄÄÄmain
+³   ³       ³   ³   AndroidManifest.xml
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄjava
+³   ³       ³   ³   ÀÄÄÄio
+³   ³       ³   ³       ÀÄÄÄflutter
+³   ³       ³   ³           ÀÄÄÄplugins
+³   ³       ³   ³                   GeneratedPluginRegistrant.java
+³   ³       ³   ³                   
+³   ³       ³   ÃÄÄÄkotlin
+³   ³       ³   ³   ÀÄÄÄcom
+³   ³       ³   ³       ÀÄÄÄexample
+³   ³       ³   ³           ÀÄÄÄtodo_app
+³   ³       ³   ³                   MainActivity.kt
+³   ³       ³   ³                   
+³   ³       ³   ÀÄÄÄres
+³   ³       ³       ÃÄÄÄdrawable
+³   ³       ³       ³       launch_background.xml
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄdrawable-v21
+³   ³       ³       ³       launch_background.xml
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄmipmap-hdpi
+³   ³       ³       ³       ic_launcher.png
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄmipmap-mdpi
+³   ³       ³       ³       ic_launcher.png
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄmipmap-xhdpi
+³   ³       ³       ³       ic_launcher.png
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄmipmap-xxhdpi
+³   ³       ³       ³       ic_launcher.png
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄmipmap-xxxhdpi
+³   ³       ³       ³       ic_launcher.png
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄvalues
+³   ³       ³       ³       styles.xml
+³   ³       ³       ³       
+³   ³       ³       ÀÄÄÄvalues-night
+³   ³       ³               styles.xml
+³   ³       ³               
+³   ³       ÀÄÄÄprofile
+³   ³               AndroidManifest.xml
+³   ³               
+³   ÀÄÄÄgradle
+³       ÀÄÄÄwrapper
+³               gradle-wrapper.jar
+³               gradle-wrapper.properties
+³               
+ÃÄÄÄbuild
+³   ³   574fc2377ef17b67df2769d9e7907272.cache.dill.track.dill
+³   ³   
+³   ÃÄÄÄ2929366b739c3ed06fcd992f3926adf1
+³   ³       gen_dart_plugin_registrant.stamp
+³   ³       gen_localizations.stamp
+³   ³       _composite.stamp
+³   ³       
+³   ÀÄÄÄflutter_assets
+³       ³   AssetManifest.bin
+³       ³   AssetManifest.bin.json
+³       ³   AssetManifest.json
+³       ³   FontManifest.json
+³       ³   NOTICES
+³       ³   
+³       ÃÄÄÄfonts
+³       ³       MaterialIcons-Regular.otf
+³       ³       
+³       ÃÄÄÄpackages
+³       ³   ÀÄÄÄcupertino_icons
+³       ³       ÀÄÄÄassets
+³       ³               CupertinoIcons.ttf
+³       ³               
+³       ÀÄÄÄshaders
+³               ink_sparkle.frag
+³               
+ÃÄÄÄios
+³   ³   .gitignore
+³   ³   
+³   ÃÄÄÄFlutter
+³   ³       AppFrameworkInfo.plist
+³   ³       Debug.xcconfig
+³   ³       flutter_export_environment.sh
+³   ³       Generated.xcconfig
+³   ³       Release.xcconfig
+³   ³       
+³   ÃÄÄÄRunner
+³   ³   ³   AppDelegate.swift
+³   ³   ³   GeneratedPluginRegistrant.h
+³   ³   ³   GeneratedPluginRegistrant.m
+³   ³   ³   Info.plist
+³   ³   ³   Runner-Bridging-Header.h
+³   ³   ³   
+³   ³   ÃÄÄÄAssets.xcassets
+³   ³   ³   ÃÄÄÄAppIcon.appiconset
+³   ³   ³   ³       Contents.json
+³   ³   ³   ³       Icon-App-1024x1024@1x.png
+³   ³   ³   ³       Icon-App-20x20@1x.png
+³   ³   ³   ³       Icon-App-20x20@2x.png
+³   ³   ³   ³       Icon-App-20x20@3x.png
+³   ³   ³   ³       Icon-App-29x29@1x.png
+³   ³   ³   ³       Icon-App-29x29@2x.png
+³   ³   ³   ³       Icon-App-29x29@3x.png
+³   ³   ³   ³       Icon-App-40x40@1x.png
+³   ³   ³   ³       Icon-App-40x40@2x.png
+³   ³   ³   ³       Icon-App-40x40@3x.png
+³   ³   ³   ³       Icon-App-60x60@2x.png
+³   ³   ³   ³       Icon-App-60x60@3x.png
+³   ³   ³   ³       Icon-App-76x76@1x.png
+³   ³   ³   ³       Icon-App-76x76@2x.png
+³   ³   ³   ³       Icon-App-83.5x83.5@2x.png
+³   ³   ³   ³       
+³   ³   ³   ÀÄÄÄLaunchImage.imageset
+³   ³   ³           Contents.json
+³   ³   ³           LaunchImage.png
+³   ³   ³           LaunchImage@2x.png
+³   ³   ³           LaunchImage@3x.png
+³   ³   ³           README.md
+³   ³   ³           
+³   ³   ÀÄÄÄBase.lproj
+³   ³           LaunchScreen.storyboard
+³   ³           Main.storyboard
+³   ³           
+³   ÃÄÄÄRunner.xcodeproj
+³   ³   ³   project.pbxproj
+³   ³   ³   
+³   ³   ÃÄÄÄproject.xcworkspace
+³   ³   ³   ³   contents.xcworkspacedata
+³   ³   ³   ³   
+³   ³   ³   ÀÄÄÄxcshareddata
+³   ³   ³           IDEWorkspaceChecks.plist
+³   ³   ³           WorkspaceSettings.xcsettings
+³   ³   ³           
+³   ³   ÀÄÄÄxcshareddata
+³   ³       ÀÄÄÄxcschemes
+³   ³               Runner.xcscheme
+³   ³               
+³   ÃÄÄÄRunner.xcworkspace
+³   ³   ³   contents.xcworkspacedata
+³   ³   ³   
+³   ³   ÀÄÄÄxcshareddata
+³   ³           IDEWorkspaceChecks.plist
+³   ³           WorkspaceSettings.xcsettings
+³   ³           
+³   ÀÄÄÄRunnerTests
+³           RunnerTests.swift
+³           
+ÃÄÄÄlib
+³   ³   main.dart
+³   ³   
+³   ÃÄÄÄmodels
+³   ³       todo_model.dart
+³   ³       
+³   ÃÄÄÄscreens
+³   ³       new_task_screen.dart
+³   ³       todo_main_screen.dart
+³   ³       
+³   ÀÄÄÄservices
+³           api_service.dart
+³           
+ÃÄÄÄlinux
+³   ³   .gitignore
+³   ³   CMakeLists.txt
+³   ³   main.cc
+³   ³   my_application.cc
+³   ³   my_application.h
+³   ³   
+³   ÀÄÄÄflutter
+³           CMakeLists.txt
+³           generated_plugins.cmake
+³           generated_plugin_registrant.cc
+³           generated_plugin_registrant.h
+³           
+ÃÄÄÄmacos
+³   ³   .gitignore
+³   ³   
+³   ÃÄÄÄFlutter
+³   ³   ³   Flutter-Debug.xcconfig
+³   ³   ³   Flutter-Release.xcconfig
+³   ³   ³   GeneratedPluginRegistrant.swift
+³   ³   ³   
+³   ³   ÀÄÄÄephemeral
+³   ³           Flutter-Generated.xcconfig
+³   ³           flutter_export_environment.sh
+³   ³           
+³   ÃÄÄÄRunner
+³   ³   ³   AppDelegate.swift
+³   ³   ³   DebugProfile.entitlements
+³   ³   ³   Info.plist
+³   ³   ³   MainFlutterWindow.swift
+³   ³   ³   Release.entitlements
+³   ³   ³   
+³   ³   ÃÄÄÄAssets.xcassets
+³   ³   ³   ÀÄÄÄAppIcon.appiconset
+³   ³   ³           app_icon_1024.png
+³   ³   ³           app_icon_128.png
+³   ³   ³           app_icon_16.png
+³   ³   ³           app_icon_256.png
+³   ³   ³           app_icon_32.png
+³   ³   ³           app_icon_512.png
+³   ³   ³           app_icon_64.png
+³   ³   ³           Contents.json
+³   ³   ³           
+³   ³   ÃÄÄÄBase.lproj
+³   ³   ³       MainMenu.xib
+³   ³   ³       
+³   ³   ÀÄÄÄConfigs
+³   ³           AppInfo.xcconfig
+³   ³           Debug.xcconfig
+³   ³           Release.xcconfig
+³   ³           Warnings.xcconfig
+³   ³           
+³   ÃÄÄÄRunner.xcodeproj
+³   ³   ³   project.pbxproj
+³   ³   ³   
+³   ³   ÃÄÄÄproject.xcworkspace
+³   ³   ³   ÀÄÄÄxcshareddata
+³   ³   ³           IDEWorkspaceChecks.plist
+³   ³   ³           
+³   ³   ÀÄÄÄxcshareddata
+³   ³       ÀÄÄÄxcschemes
+³   ³               Runner.xcscheme
+³   ³               
+³   ÃÄÄÄRunner.xcworkspace
+³   ³   ³   contents.xcworkspacedata
+³   ³   ³   
+³   ³   ÀÄÄÄxcshareddata
+³   ³           IDEWorkspaceChecks.plist
+³   ³           
+³   ÀÄÄÄRunnerTests
+³           RunnerTests.swift
+³           
+ÃÄÄÄtest
+³       widget_test.dart
+³       
+ÃÄÄÄweb
+³   ³   favicon.png
+³   ³   index.html
+³   ³   manifest.json
+³   ³   
+³   ÀÄÄÄicons
+³           Icon-192.png
+³           Icon-512.png
+³           Icon-maskable-192.png
+³           Icon-maskable-512.png
+³           
+ÀÄÄÄwindows
+    ³   .gitignore
+    ³   CMakeLists.txt
+    ³   
+    ÃÄÄÄflutter
+    ³       CMakeLists.txt
+    ³       generated_plugins.cmake
+    ³       generated_plugin_registrant.cc
+    ³       generated_plugin_registrant.h
+    ³       
+    ÀÄÄÄrunner
+        ³   CMakeLists.txt
+        ³   flutter_window.cpp
+        ³   flutter_window.h
+        ³   main.cpp
+        ³   resource.h
+        ³   runner.exe.manifest
+        ³   Runner.rc
+        ³   utils.cpp
+        ³   utils.h
+        ³   win32_window.cpp
+        ³   win32_window.h
+        ³   
+        ÀÄÄÄresources
+                app_icon.ico
+                
