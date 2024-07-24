@@ -102,6 +102,9 @@ class _EditTaskState extends State<EditTask> {
                         });
                       },
                     ),
+                    const SizedBox(
+                      height:10.0,
+                    ),
                     TextFormField(
                       initialValue: _description,
                       decoration: const InputDecoration(labelText: 'Description'),

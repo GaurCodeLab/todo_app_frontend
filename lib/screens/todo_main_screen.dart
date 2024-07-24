@@ -123,7 +123,13 @@ class _TodoListScreenState extends State<TodoListScreen> {
   Widget _builNarrowLayout() {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Todo List'),
+        title: Padding(
+          padding: const EdgeInsets.only(bottom:40.0, top: 20.0),
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Text('Todo List'),
+          ),
+        ),
       ),
       body: _buildTodosList(),
       floatingActionButton: FloatingActionButton(

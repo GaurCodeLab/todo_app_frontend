@@ -56,6 +56,9 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                 validator: (value) =>
                     value!.isEmpty ? 'Please enter a title' : null,
               ),
+              const SizedBox(
+                height: 10.0,
+              ),
               TextFormField(
                 decoration: const InputDecoration(labelText: 'Description'),
                 onSaved: (value) => _description = value!,
