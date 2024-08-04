@@ -1,3 +1,5 @@
+//import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:todo_app/models/todo_model.dart';
 import '../services/api_service.dart';
@@ -12,6 +14,7 @@ class AddTodoScreen extends StatefulWidget {
 
 class _AddTodoScreenState extends State<AddTodoScreen> {
   final _formKey = GlobalKey<FormState>();
+
   String _title = '';
   String _description = '';
   bool _isCompleted = false;
@@ -31,9 +34,12 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
       apiService.createTodo(newTodo).then((createdTodo) {
         Navigator.pop(context, createdTodo);
       }).catchError((error) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to create todo: $error')),
-        );
+        if (error is! Exception ||
+            error.toString() != 'Failed to Create todo') {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Failed to create todo: $error')),
+          );
+        }
       });
     }
   }
@@ -77,7 +83,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: _submitForm,
-                child: const Text('Add Todo'),
+                child: const Text('Add Task'),
               ),
             ],
           ),

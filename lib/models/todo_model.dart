@@ -8,15 +8,15 @@ class ToDo {
     required this.id,
     required this.description,
     required this.title,
-    required this.isCompleted,
+    required this.isCompleted ,
   });
 
   factory ToDo.fromJson(Map<String, dynamic> json) {
     return ToDo(
-      id: json['id'],
-      title: json['title'],
-      description: json['description'],
-      isCompleted: json['completed'],
+      id: json['id'] ?? 0,
+      title: json['title']?? '',
+      description: json['description']?? '',
+      isCompleted: json['completed'] ?? false,
     );
   }
 

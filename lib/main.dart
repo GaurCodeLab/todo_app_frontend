@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/screens/todo_main_screen.dart';
+import 'package:todo_app/screens/login_screen.dart';
+import 'package:todo_app/screens/register_screen.dart';
+//import 'package:todo_app/screens/todo_main_screen.dart';
 import 'package:todo_app/utils/theme.dart';
 
 void main() {
@@ -15,7 +17,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My ToDo',
       theme: appTheme,
-      home: const TodoListScreen(),
+      home: const RegisterScreen(),
+      routes: {
+        '/register': (context) => const RegisterScreen(),
+        '/login' : (context) => const LoginScreen(),
+      },
     );
   }
 }

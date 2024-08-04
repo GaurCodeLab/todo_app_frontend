@@ -1,10 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import 'package:todo_app/models/todo_model.dart';
 import 'package:todo_app/screens/edit_task_screen.dart';
 import 'package:todo_app/screens/new_task_screen.dart';
+import 'package:todo_app/services/token_service.dart';
 import 'package:todo_app/widgets/neumorphic_container.dart';
 import '../services/api_service.dart';
 
@@ -20,6 +22,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
   late Future<List<ToDo>> futureTodos;
   final ApiService apiService = ApiService();
   late Future<List<ToDo>> _todoList;
+  bool isLoggedIn = false;
 
   // void _loadTodos() {
   //   apiService.getToDos().then((todos) {
@@ -40,6 +43,20 @@ class _TodoListScreenState extends State<TodoListScreen> {
     // futureTodos = apiService.getToDos();
     // _loadTodos();
     _todoList = ApiService().getToDos();
+    _checkLoginStatus();
+  }
+
+  void _checkLoginStatus() async {
+    final token = await TokenService.getToken();
+    if (token != null) {
+      setState(() {
+        isLoggedIn = true;
+      });
+    } else {
+      setState(() {
+        isLoggedIn = false;
+      });
+    }
   }
 
   // void _deleteTodo(ToDo todo) {
@@ -89,7 +106,23 @@ class _TodoListScreenState extends State<TodoListScreen> {
   Widget _buildWideLayout() {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Todo List'),
+        title: Text(
+          'Todo List',
+        ),
+        actions: [
+          GestureDetector(
+              onTap: () async {
+                if (isLoggedIn) {
+                  await TokenService.removeToken();
+                  setState(() {
+                    isLoggedIn = false;
+                  });
+                } else {
+                  Navigator.pushNamed(context, '/register');
+                }
+              },
+              child: Text(isLoggedIn ? 'Logout' : 'Register'))
+        ],
       ),
       body: Row(children: [
         Expanded(
@@ -124,12 +157,23 @@ class _TodoListScreenState extends State<TodoListScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Padding(
-          padding: const EdgeInsets.only(bottom:40.0, top: 20.0),
-          child: Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Text('Todo List'),
-          ),
+          padding: const EdgeInsets.all(10.0),
+          child: Text('Todo List'),
         ),
+         actions: [
+          GestureDetector(
+              onTap: () async {
+                if (isLoggedIn) {
+                  await TokenService.removeToken();
+                  setState(() {
+                    isLoggedIn = false;
+                  });
+                } else {
+                  Navigator.pushNamed(context, '/register');
+                }
+              },
+              child: Text(isLoggedIn ? 'Logout' : 'Register'))
+        ],
       ),
       body: _buildTodosList(),
       floatingActionButton: FloatingActionButton(
@@ -158,7 +202,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
           );
         } else if (snapshot.hasError) {
           return Center(child: Text('Error: ${snapshot.error}'));
-        } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
+        } else if (!snapshot.hasData || snapshot.data?.isEmpty == true) {
           return Center(child: Text('No todos available'));
         } else {
           return ListView.builder(
@@ -166,10 +210,8 @@ class _TodoListScreenState extends State<TodoListScreen> {
             itemBuilder: (context, index) {
               final todo = snapshot.data![index];
               return Padding(
-                padding:
-                    const EdgeInsets.only(bottom: 30.0, right: 80.0),
+                padding: const EdgeInsets.only(bottom: 30.0, right: 80.0),
                 child: NeumorphicContainer(
-                 
                   child: ListTile(
                       title: Text(todo.title),
                       subtitle: Text(todo.description),
