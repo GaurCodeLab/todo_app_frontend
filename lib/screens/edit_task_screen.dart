@@ -17,6 +17,7 @@ class _EditTaskState extends State<EditTask> {
   late String _title;
   late String _description;
   bool _isloading = false;
+   DateTime? _dueDate;
   final ApiService apiService = ApiService();
 
   @override
@@ -36,7 +37,9 @@ class _EditTaskState extends State<EditTask> {
           id: widget.todo.id,
           title: _title,
           description: _description,
-          isCompleted: widget.todo.isCompleted);
+          isCompleted: widget.todo.isCompleted,
+          dueDate: _dueDate,
+          );
 
           try {
             await apiService.updateTodo(updatedTodo);
@@ -121,6 +124,22 @@ class _EditTaskState extends State<EditTask> {
                       },
                     ),
                     const SizedBox(height: 20),
+                    ElevatedButton(
+                onPressed: () async {
+                  final pickedDate = await showDatePicker(
+                      context: context,
+                      firstDate: DateTime.now(),
+                      lastDate: DateTime(2100),
+                      initialDate: DateTime.now());
+                  if (pickedDate != null) {
+                    setState(() {
+                      _dueDate = pickedDate;
+                    });
+                  }
+                },
+                child: const Text('Select Due Date'),
+              ),  
+              const SizedBox(height: 20,),
                     ElevatedButton(
                       onPressed: _isloading ? null : _updateTask,
                       child: const Text('Update Task'),

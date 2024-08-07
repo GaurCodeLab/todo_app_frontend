@@ -1,8 +1,10 @@
 import 'dart:convert';
 
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:http/http.dart' as http;
 import 'package:todo_app/models/todo_model.dart';
 import 'package:todo_app/services/token_service.dart';
+import 'package:todo_app/utils/notification_handler.dart';
 
 class ApiService {
   final String baseUrl = "http://127.0.0.1:8000/api/";
@@ -44,7 +46,7 @@ class ApiService {
     );
 
     if (response.statusCode == 200) {
-      // print(response.body);
+      print(response.body);
       List jsonResponse = json.decode(response.body);
 
       return jsonResponse.map((todo) => ToDo.fromJson(todo)).toList();
@@ -101,5 +103,16 @@ class ApiService {
     } else {
       throw Exception('Failed to delete todo');
     }
+  }
+
+  Future<void> checkDueDates() async {
+    final todos = await getToDos();
+    todos.forEach((todo) async {
+      if (todo.dueDate?.isBefore(DateTime.now()) ?? false) {
+        final notificationHandler =
+            NotificationHandler(FlutterLocalNotificationsPlugin());
+        await notificationHandler.showNotification(todo);
+      }
+    });
   }
 }

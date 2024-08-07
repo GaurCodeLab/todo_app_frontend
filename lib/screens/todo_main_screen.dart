@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:intl/intl.dart';
 
 import 'package:todo_app/models/todo_model.dart';
 import 'package:todo_app/screens/edit_task_screen.dart';
@@ -59,19 +60,6 @@ class _TodoListScreenState extends State<TodoListScreen> {
     }
   }
 
-  // void _deleteTodo(ToDo todo) {
-  //   apiService.deleteTodo(todo.id).then((_) {
-  //     setState(() {
-  //       _todos.remove(todo);
-  //     });
-  //   }).catchError((error) {
-  //     ScaffoldMessenger.of(context).showSnackBar(
-  //       SnackBar(content: Text('Failed to delte task: $error')),
-  //     );
-  //   });
-  // }
-
-  // void _editTodo(ToDo todo) async {
   //   final result = await Navigator.push(
   //     context,
   //     MaterialPageRoute(builder: (context) => EditTask(todo: todo)),
@@ -160,7 +148,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
           padding: const EdgeInsets.all(10.0),
           child: Text('Todo List'),
         ),
-         actions: [
+        actions: [
           GestureDetector(
               onTap: () async {
                 if (isLoggedIn) {
@@ -213,27 +201,35 @@ class _TodoListScreenState extends State<TodoListScreen> {
                 padding: const EdgeInsets.only(bottom: 30.0, right: 80.0),
                 child: NeumorphicContainer(
                   child: ListTile(
-                      title: Text(todo.title),
-                      subtitle: Text(todo.description),
-                      trailing: Checkbox(
-                          value: todo.isCompleted,
-                          onChanged: (value) {
-                            setState(() {
-                              todo.isCompleted = value as bool;
-                              ApiService().updateTodo(todo);
-                            });
-                          }),
-                      onTap: () async {
-                        await Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => EditTask(todo: todo)))
-                            .then((onValue) {
+                    title: Text(todo.title),
+                    subtitle: Text(todo.description),
+                    trailing: Checkbox(
+                        value: todo.isCompleted,
+                        onChanged: (value) {
+                          setState(() {
+                            todo.isCompleted = value as bool;
+                            ApiService().updateTodo(todo);
+                          });
+                        }),
+                    onTap: () async {
+                      await Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => EditTask(todo: todo))).then(
+                        (onValue) {
                           setState(() {
                             _todoList = ApiService().getToDos();
                           });
-                        });
-                      }),
+                        },
+                      );
+                    },
+                    leading: Text(
+                      todo.dueDate != null
+                          ? DateFormat('yyy-MM-dd').format(todo.dueDate!)
+                          : 'No due date',
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                  ),
                 ),
               );
             },
@@ -243,45 +239,6 @@ class _TodoListScreenState extends State<TodoListScreen> {
     );
   }
 
-  //   appBar: AppBar(
-  //     title: const Text('Todo List'),
-  //   ),
-  //   body: _todos.isEmpty
-  //       ? const Center(child: CircularProgressIndicator())
-  //       : ListView.builder(
-  //           itemCount: _todos.length,
-  //           itemBuilder: (context, index) {
-  //             ToDo todo = _todos[index];
-  //             return ListTile(
-  //               title: Text(todo.title),
-  //               subtitle: Text(todo.description),
-  //               trailing: Row(
-  //                 mainAxisSize: MainAxisSize.min,
-  //                 children: [
-  //                   Checkbox(
-  //                       value: todo.isCompleted,
-  //                       onChanged: (bool? value) {
-  //                         setState(() {
-  //                           todo.isCompleted = value!;
-  //                           apiService.updateTodo(todo);
-  //                         });
-  //                       }),
-  //                   IconButton(
-  //                     onPressed: () {
-  //                       _editTodo(todo);
-  //                     },
-  //                     icon: Icon(Icons.edit),
-  //                   )
-  //                 ],
-  //               ),
-  //               onTap: () {
-  //                 _editTodo(todo);
-  //               },
-  //             );
-  //           },
-  //         ),
-
-  //   //  FutureBuilder<List<ToDo>>(
   //   //   future: futureTodos,
   //   //   builder: (context, snapshot) {
   //   //     if (snapshot.connectionState == ConnectionState.waiting) {

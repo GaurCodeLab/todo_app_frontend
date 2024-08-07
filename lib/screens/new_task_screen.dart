@@ -18,6 +18,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
   String _title = '';
   String _description = '';
   bool _isCompleted = false;
+  DateTime? _dueDate;
 
   final ApiService apiService = ApiService();
 
@@ -29,6 +30,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
         title: _title,
         description: _description,
         isCompleted: _isCompleted,
+        dueDate: _dueDate,
       );
 
       apiService.createTodo(newTodo).then((createdTodo) {
@@ -79,6 +81,24 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                     _isCompleted = value;
                   });
                 },
+              ),
+              const SizedBox(
+                width: 20,
+              ),
+              ElevatedButton(
+                onPressed: () async {
+                  final pickedDate = await showDatePicker(
+                      context: context,
+                      firstDate: DateTime.now(),
+                      lastDate: DateTime(2100),
+                      initialDate: DateTime.now());
+                  if (pickedDate != null) {
+                    setState(() {
+                      _dueDate = pickedDate;
+                    });
+                  }
+                },
+                child: const Text('Select Due Date'),
               ),
               const SizedBox(height: 20),
               ElevatedButton(
